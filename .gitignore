@@ -1,0 +1,25 @@
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Java
+*.class
+*.log
+
+# Maven
+backend/target/
+
+# Frontend (futuro)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
