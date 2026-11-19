@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: backend
   datasource:
     url: jdbc:postgresql://localhost:5432/agendanails
     username: agendanails
