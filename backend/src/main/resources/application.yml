@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/agendanails
+    username: agendanails
+    password: senha123
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:chave-apenas-para-desenvolvimento-com-mais-de-32-caracteres}
+    expiracao-minutos: 120
+  admin:
+    email: ${ADMIN_EMAIL:admin@agendanails.com}
+    senha: ${ADMIN_SENHA:admin123}
+  cors:
+    origin: ${CORS_ORIGIN:http://localhost:5173}
